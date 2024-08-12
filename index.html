@@ -19,12 +19,24 @@
 
     <div class="main">
         <img id="map" src="Countries.jpeg" alt="A world map photo">
-        <table>
+    <div class="search-bar">
+        <p id="instruction">Looking for a specific country?, then try our search bar below.</p>
+        <div>
+            <p id="countryinstruction">Search for a country name</p>
+            <input type="search" name="country" id="searchcountry" placeholder="Country">
+        </div>
+       <button type="submit" name="search" id="searchbutton" onclick="searchCountryAPI()">Click to Search</button>
+        </div>
+    </div>
+        <table id="table">
             <thead>
                 <tr style="width: 50px;">
                     <th id="country">Country</th>
                     <th id="population">Population</th>
                     <th id="flag">Flag</th>
+                    <th id="region">Region</th>
+                    <th id="coatofarms">Coat of Arms</th>
+                    <th id="independent">Independent</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
