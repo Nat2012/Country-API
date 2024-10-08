@@ -1,24 +1,31 @@
 body{
     background-color: black;
-}
-
-p{
     color: white;
 }
+
+
+.light{
+    color: black;
+}
+
+.dark{
+    color: white;
+}
+
 
 #heading{
     font-size: larger;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     font-style: italic;
-    padding-left: 40%;
+    margin-left: 40%;
         
 }
 
 #logo{
     width: 40px;
     height: 50px;
-    padding-left: 46%;
+    margin-left: 46%;
 }
 
 
@@ -42,7 +49,6 @@ table,td,th{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     font-style: italic;
-    color: beige;
     border: 0.01px solid brown;
 }
 
@@ -50,7 +56,6 @@ table,td,th{
     font-size: x-large;
     font-style: italic;
     font-weight: bolder;
-    color: aliceblue;
 }
 
 
@@ -58,12 +63,181 @@ table,td,th{
 #searchbutton{
     font-style: italic;
     font-weight: bolder;
-    color: aliceblue;
     background-color: brown;
     height: 50px;
     margin-top: 10px;
     margin-right: 80%;
 }
 
+#body{
+    background-color: black;
+}
 
 
+@media only screen and (max-width: 1000px){
+    #heading{
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+        margin-left: 10px;
+    }
+
+    #map{
+        display: none;
+    }
+
+    body{
+        width: 100vw;
+    }
+
+    #table{
+        width: 100vw;
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    #logo{
+        width: 40px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    
+    
+    #description{
+       display: none;
+    }
+    
+    #population{
+        display: none;
+    }
+    
+    #flag{
+        display: none;
+    }
+
+    #region{
+        display: none;
+    }
+
+    #coatofarms{
+        display: none;
+    }
+
+    #independent{
+        display: none;
+    }
+
+    #map{
+        height: 100px;
+        border-radius: 50px;
+        margin-left: 10px;
+    }
+    
+    table,td,th{
+        width: 50%;
+        font-size: larger;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bolder;
+        font-style: italic;
+        border: 0.01px solid brown;
+    }
+    
+    #instruction{
+        font-size: x-large;
+        font-style: italic;
+        font-weight: bolder;
+        margin-right: 50px;
+    }
+    
+    
+    
+    #searchbutton{
+        font-style: italic;
+        font-weight: bolder;
+        background-color: brown;
+        height: 40px;
+        width: 80px;
+        margin-right: 100px;
+    }
+
+    @media only screen and (max-width: 600px){
+        #heading{
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            margin-left: 10px;
+        }
+
+        body{
+            width: 100%;
+        }
+        
+        #logo{
+            width: 40px;
+            height: 50px;
+            margin-left: 10px;
+        }
+        
+        
+        #description{
+           display: none;
+        }
+        
+        #population{
+            display: none;
+        }
+        
+        #flag{
+            display: none;
+        }
+    
+        #region{
+            display: none;
+        }
+    
+        #coatofarms{
+            display: none;
+        }
+    
+        #independent{
+            display: none;
+        }
+        
+        #map{
+            height: 100px;
+            border-radius: 50px;
+            margin-left: 10px;
+        }
+        
+        table,td,th{
+            width: 50%;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            border: 0.01px solid brown;
+        }
+        
+        #instruction{
+            font-size: x-large;
+            font-style: italic;
+            font-weight: bolder;
+            margin-right: 50px;
+        }
+        
+        
+        
+        #searchbutton{
+            font-style: italic;
+            font-weight: bolder;
+            background-color: brown;
+            height: 40px;
+            width: 80px;
+            margin-right: 100px;
+        }
+    }
+}
