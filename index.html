@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="API.CSS">
     <script src="CountryAPI.js"></script>
 </head>
-<body>
+<body id="body">
     <div class="Top">
+        <div class="modes">
+            <button type="button" id="dark_mode" onclick="darkMode()">Dark Mode</button>
+            <button type="button" id="light_mode" onclick="lightMode()">Light Mode</button>
+        </div>
         <div><img id="logo" src="Logo.jpg" alt="A yellow rectangle logo">
             <p id="heading">Countries Of the World</p>
         </div>
@@ -45,6 +49,59 @@
             
         </table>
     </div>
-    
+   <script>
+    const body = document.body;
+    const btn1 =  document.getElementById('dark_mode');
+    const btn2 = document.getElementById('light_mode');
+    const heading = document.getElementById('heading');   
+    const description = document.getElementById('description');
+    const instruction = document.getElementById('instruction'); 
+    const countryInstruction = document.getElementById('countryinstruction');
+    const searchButton = document.getElementById('searchbutton');
+    const table = document.getElementById('tableBody');
+    const country = document.getElementById('country');
+    const population = document.getElementById('population');
+    const flag = document.getElementById('flag');
+    const region = document.getElementById('region');
+    const coatOfArms = document.getElementById('coatofarms');
+    const independent = document.getElementById('independent');
+
+ function darkMode(){
+  body.style.backgroundColor = "black";
+  btn1.setAttribute("class", "dark");
+  btn2.setAttribute("class", "dark");
+  heading.setAttribute("class", "dark");
+  description.setAttribute("class", "dark");
+  instruction.setAttribute("class", "dark");
+  countryInstruction.setAttribute("class", "dark");
+  searchButton.setAttribute("class", "dark");
+  table.setAttribute('class', 'dark')
+  country.setAttribute('class', 'dark')
+  population.setAttribute('class', 'dark')
+  flag.setAttribute('class', 'dark')
+  region.setAttribute('class', 'dark')
+  coatOfArms.setAttribute('class', 'dark')
+  independent.setAttribute('class', 'dark')
+}
+ function lightMode(){
+  body.style.backgroundColor = "white";
+  btn1.setAttribute("class", "light");
+  btn2.setAttribute("class", "light");
+  heading.setAttribute("class", "light");
+  description.setAttribute("class", "light");
+  instruction.setAttribute("class", "light");
+  countryInstruction.setAttribute("class", "light");
+  searchButton.setAttribute("class", "light");
+  table.setAttribute('class', 'light')
+  country.setAttribute('class', 'light')
+  population.setAttribute('class', 'light')
+  flag.setAttribute('class', 'light')
+  region.setAttribute('class', 'light')
+  coatOfArms.setAttribute('class', 'light')
+  independent.setAttribute('class', 'light')
+}
+
+   </script>
+
 </body>
 </html>
